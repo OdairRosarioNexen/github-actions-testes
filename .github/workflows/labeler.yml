@@ -5,13 +5,9 @@ on:
 
 jobs:
   label:
-
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      actions: write
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.SECRET_ACTIONS_PORTIFOLIO_EXEMPLE }}"
+      - uses: actions/setup-node@v4  
+        with:
+          node-version: 20
+          repo-token: ${{ secrets.SECRET_ACTIONS_PORTIFOLIO_EXEMPLE }}

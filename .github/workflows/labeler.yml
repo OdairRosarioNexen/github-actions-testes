@@ -1,13 +1,13 @@
-name: Labeler
-on:
-  pull_request:
-    types: [opened, reopened]
+name: "Pull Request Labeler"
+
+on: [pull_request]
 
 jobs:
   label:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/setup-node@v4  
-        with:
-          node-version: 20
-          token: ${{ secrets.SECRET_ACTIONS_PORTIFOLIO_EXEMPLE }}
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.SECRET_ACTIONS_PORTIFOLIO_EXEMPLE }}"

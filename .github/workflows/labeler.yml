@@ -6,7 +6,10 @@ on:
 
 jobs:
   label:
-
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
     runs-on: ubuntu-latest
 
     steps:

@@ -10,4 +10,4 @@ jobs:
       - uses: actions/setup-node@v4  
         with:
           node-version: 20
-          repo-token: ${{ secrets.SECRET_ACTIONS_PORTIFOLIO_EXEMPLE }}
+          token: ${{ secrets.SECRET_ACTIONS_PORTIFOLIO_EXEMPLE }}

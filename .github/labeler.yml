@@ -1,5 +1,4 @@
-workflows:
-  - '.github/workflows/**/*'
-
-scripts:
-  - 'scripts/**/*'
+"backend: svg":
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'lib/matplotlib/backends/backend_svg.py'

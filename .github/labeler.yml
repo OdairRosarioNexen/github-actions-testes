@@ -1,4 +1,4 @@
-"Scripts: typescript":
+"backend: svg":
   - changed-files:
       - any-glob-to-any-file:
-          - 'scripts/**'
+          - 'lib/matplotlib/backends/backend_svg.py'
